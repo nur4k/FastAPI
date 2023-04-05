@@ -25,3 +25,16 @@ fake_trades = [
 @app.get("/trades")
 def get_trade(limit: int, offset: int):
     return fake_trades[offset:][:limit]
+
+
+fake_users2 = [
+    {"id": 1, "name": "Nur", "number": 501332232},
+    {"id": 2, "name": "Malika", "number": 501388588},
+    {"id": 3, "name": "Samat", "number": 556330050}
+]
+
+@app.post("/change_name")
+def change_name_user(user_id: int, new_name: str):
+    current_user = list(filter(lambda user: user.get("id") == user_id, fake_users2))[0] #Достаем пользователя по id
+    current_user["name"] = new_name
+    return{'status': 200, "data": current_user}
