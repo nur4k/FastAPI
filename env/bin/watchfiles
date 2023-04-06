@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/Users/user/Desktop/Новая папка/env/bin/python3" "$0" "$@"
-' '''
+#!/Users/user/Desktop/FastAPI/env/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
