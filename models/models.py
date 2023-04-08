@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from sqlalchemy import JSON, MetaData, Column, Integer, String, TIMESTAMP
+from sqlalchemy import JSON, MetaData, Column, Integer, String, TIMESTAMP, ForeignKey
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship

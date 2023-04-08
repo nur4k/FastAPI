@@ -10,6 +10,11 @@ packages = [{include = "learn_fastapi"}]
 python = "^3.11"
 fastapi = "^0.95.0"
 uvicorn = "^0.21.1"
+sqlalchemy = "^2.0.9"
+alembic = "^1.10.3"
+psycopg2-binary = "^2.9.6"
+python-dotenv = "^1.0.0"
+fastapi-users = {extras = ["sqlalchemy"], version = "^10.4.1"}
 
 
 [build-system]
