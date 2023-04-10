@@ -1,4 +1,4 @@
-from .models import Roles, Users
+from .models import Role, User
 
 
-__all__ = ['Roles', 'Users']
+__all__ = ['Role', 'User']
